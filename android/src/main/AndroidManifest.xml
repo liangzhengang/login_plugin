@@ -1,3 +1,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.example.login_plugin">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.login_plugin">
+
+    <application>
+        <activity
+            android:name="com.umeng.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="facebook"
+            tools:ignore="Instantiatable"/>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+    </application>
 </manifest>

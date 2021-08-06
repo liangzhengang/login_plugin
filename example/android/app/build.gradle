@@ -50,6 +50,15 @@ android {
         versionName flutterVersionName
     }
 
+    signingConfigs {
+        debug {
+            keyAlias 'senssun'
+            keyPassword 'senssun20141231'
+            storeFile file('senssunkey.keystore')
+            storePassword 'senssun20141231'
+        }
+    }
+
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
@@ -57,6 +66,7 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
 }
 
 flutter {
@@ -64,5 +74,6 @@ flutter {
 }
 
 dependencies {
+    api(name:'umeng-asms-armeabi-v1.4.0', ext:'aar')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }

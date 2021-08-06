@@ -3,13 +3,17 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <excludeFolder url="file://$MODULE_DIR$/example/.pub" />
-      <excludeFolder url="file://$MODULE_DIR$/example/build" />
       <excludeFolder url="file://$MODULE_DIR$/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
+      <excludeFolder url="file://$MODULE_DIR$/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/example/build" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Dart SDK" level="project" />
     <orderEntry type="library" name="Flutter Plugins" level="project" />
+    <orderEntry type="library" name="umeng-common-9.4.0" level="project" />
+    <orderEntry type="library" name="utdid4all-1.5.2.1-proguard" level="project" />
+    <orderEntry type="library" name="umeng-sharetool-7.1.5" level="project" />
   </component>
 </module>

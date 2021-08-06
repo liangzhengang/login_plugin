@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="utdid4all-1.5.2.1-proguard">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android/libs/utdid4all-1.5.2.1-proguard.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
