@@ -50,14 +50,7 @@ android {
         versionName flutterVersionName
     }
 
-    signingConfigs {
-        debug {
-            keyAlias 'senssun'
-            keyPassword 'senssun20141231'
-            storeFile file('senssunkey.keystore')
-            storePassword 'senssun20141231'
-        }
-    }
+
 
     buildTypes {
         release {
