@@ -119,10 +119,9 @@ class LoginPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, ActivityRes
         try {
             val account: GoogleSignInAccount = completedTask.getResult(ApiException::class.java)
             val list = mutableListOf<Map<String, String?>>()
-            list.add(mapOf(Pair("displayName", account.displayName)))
+            list.add(mapOf(Pair("name", account.displayName)))
             list.add(mapOf(Pair("email", account.email)))
-            list.add(mapOf(Pair("familyName", account.familyName)))
-            list.add(mapOf(Pair("photoUrl", account.photoUrl?.toString())))
+            list.add(mapOf(Pair("iconurl", account.photoUrl?.toString())))
             list.add(mapOf(Pair("id", account.id)))
             result?.success(list)
         } catch (e: ApiException) {
