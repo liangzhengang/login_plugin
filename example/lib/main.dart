@@ -33,7 +33,7 @@ class _MyAppState extends State<MyApp> {
       platformVersion =
           await LoginPlugin.platformVersion ?? 'Unknown platform version';
       await LoginPlugin.init("");
-      await LoginPlugin.auth(LoginType.facebook);
+      await LoginPlugin.auth(LoginType.google);
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
