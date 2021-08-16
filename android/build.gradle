@@ -57,7 +57,7 @@ dependencies {
     implementation files('libs\\umeng-sharetool-7.1.5.jar')
     implementation files('libs\\umeng-share-core-7.1.5.jar')
     implementation files('libs\\umeng-share-facebook-7.1.5.jar')//必选
-    compileOnly files('libs\\umeng-asms-armeabi-v1.4.0.aar') // asms包依赖(必选)
+    implementation files('libs\\umeng-asms-armeabi-v1.4.0.aar') // asms包依赖(必选)
     implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
     implementation 'com.google.android.gms:play-services-auth:19.2.0'
 }
