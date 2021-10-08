@@ -6,8 +6,8 @@
 
 #import "GeneratedPluginRegistrant.h"
 
-#if __has_include(<login_plugin/NBPlugin.h>)
-#import <login_plugin/NBPlugin.h>
+#if __has_include(<login_plugin/LoginPlugin.h>)
+#import <login_plugin/LoginPlugin.h>
 #else
 @import login_plugin;
 #endif
@@ -15,7 +15,7 @@
 @implementation GeneratedPluginRegistrant
 
 + (void)registerWithRegistry:(NSObject<FlutterPluginRegistry>*)registry {
-  [NBPlugin registerWithRegistrar:[registry registrarForPlugin:@"NBPlugin"]];
+  [LoginPlugin registerWithRegistrar:[registry registrarForPlugin:@"LoginPlugin"]];
 }
 
 @end

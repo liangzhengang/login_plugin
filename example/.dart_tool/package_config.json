@@ -3,7 +3,7 @@
   "packages": [
     {
       "name": "async",
-      "rootUri": "file:///D:/flutter_windows_2.0.1-stable/flutter/.pub-cache/hosted/pub.flutter-io.cn/async-2.7.0",
+      "rootUri": "file:///D:/flutter_windows_2.0.1-stable/flutter/.pub-cache/hosted/pub.flutter-io.cn/async-2.8.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -135,7 +135,7 @@
     },
     {
       "name": "test_api",
-      "rootUri": "file:///D:/flutter_windows_2.0.1-stable/flutter/.pub-cache/hosted/pub.flutter-io.cn/test_api-0.4.1",
+      "rootUri": "file:///D:/flutter_windows_2.0.1-stable/flutter/.pub-cache/hosted/pub.flutter-io.cn/test_api-0.4.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -158,7 +158,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-08-05T05:39:07.425638Z",
+  "generated": "2021-10-08T09:42:07.825308Z",
   "generator": "pub",
-  "generatorVersion": "2.14.0-301.2.beta"
+  "generatorVersion": "2.14.0-377.7.beta"
 }

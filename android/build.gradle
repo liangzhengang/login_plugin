@@ -52,12 +52,6 @@ android {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation files('libs\\umeng-common-9.4.0.jar')
-    implementation files('libs\\utdid4all-1.5.2.1-proguard.jar')
-    implementation files('libs\\umeng-sharetool-7.1.5.jar')
-    implementation files('libs\\umeng-share-core-7.1.5.jar')
-    implementation files('libs\\umeng-share-facebook-7.1.5.jar')//必选
-    compileOnly  files('libs\\umeng-asms-armeabi-v1.4.0.aar') // asms包依赖(必选)
     implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
     implementation 'com.google.android.gms:play-services-auth:19.2.0'
 }
