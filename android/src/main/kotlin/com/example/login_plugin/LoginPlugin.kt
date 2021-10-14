@@ -95,8 +95,6 @@ class LoginPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, ActivityRes
     }
 
 
-
-
     private fun handleSignInResult(completedTask: Task<GoogleSignInAccount>) {
         try {
             val account: GoogleSignInAccount = completedTask.getResult(ApiException::class.java)
@@ -105,6 +103,7 @@ class LoginPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, ActivityRes
             list.add(mapOf(Pair("email", account.email)))
             list.add(mapOf(Pair("iconurl", account.photoUrl?.toString())))
             list.add(mapOf(Pair("id", account.id)))
+            Log.w(TAG, account.displayName + account.email)
             result?.success(list)
         } catch (e: ApiException) {
             Log.w(TAG, "signInResult:failed code=" + e.statusCode)
@@ -114,6 +113,7 @@ class LoginPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, ActivityRes
 
     private val TAG = "LoginPlugin"
     private fun authToLogin(call: MethodCall, result: Result) {
+        this.result = result
         authByGoogle()
     }
 
@@ -126,9 +126,6 @@ class LoginPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, ActivityRes
         val signInIntent: Intent = mGoogleSignInClient.signInIntent
         activity.startActivityForResult(signInIntent, RC_SIGN_IN)
     }
-
-
-
 
 
 }

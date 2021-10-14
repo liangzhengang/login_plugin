@@ -32,7 +32,14 @@ class _MyAppState extends State<MyApp> {
     try {
       platformVersion =
           await LoginPlugin.platformVersion ?? 'Unknown platform version';
-      await LoginPlugin.init("");
+      await LoginPlugin.authByGoogle().then((value) {
+        print("value");
+        if (value != null) {
+          value.forEach((element) {
+            print(element);
+          });
+        }
+      });
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
